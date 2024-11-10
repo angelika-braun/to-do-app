@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+/* sienna brown gradient */
+--fawn: #fbba72ff;
+--tawny: #ca5310ff;
+--burnt-orange: #bb4d00ff;
+--sienna: #8f250cff;
+--barn-red: #691e06ff;
+
+  /* orange gradient */
+--tangelo: #ff4800ff;
+--orange-pantone: #ff5400ff;
+--orange-pantone-2: #ff6000ff;
+--pumpkin: #ff6d00ff;
+--safety-orange: #ff7900ff;
+--ut-orange: #ff8500ff;
+--princeton-orange: #ff9100ff;
+--orange-peel: #ff9e00ff;
+--orange-web: #ffaa00ff;
+--selective-yellow: #ffb600ff;
+
+/* blush gradient */
+--chocolate-cosmos: #590d22ff;
+--claret: #800f2fff;
+--amaranth-purple: #a4133cff;
+--rose-red: #c9184aff;
+--bright-pink-crayola: #ff4d6dff;
+--bright-pink-crayola-2: #ff758fff;
+--salmon-pink: #ff8fa3ff;
+--cherry-blossom-pink: #ffb3c1ff;
+--pink: #ffccd5ff;
+--lavender-blush: #fff0f3ff;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100dvh;
+  background: linear-gradient(0deg, var(--pink), var(--cherry-blossom-pink), var(--salmon-pink), var(--bright-pink-crayola), var(--rose-red), var(--amaranth-purple), var(--claret), var(--chocolate-cosmos));;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: var(--pink);
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: var(--chocolate-cosmos);
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid var(--bright-pink-crayola-2);
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: var(--pink);
+}
+
+.todo-input::placeholder {
+  color: var(--pink);
+}
+
+.todo-btn {
+  background: var(--bright-pink-crayola-2);
+  color: var(--chocolate-cosmos);
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bright-pink-crayola-2);
+  color: var(--chocolate-cosmos);
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: var(--chocolate-cosmos);
+  cursor: pointer;
+}
+
+.completed {
+  color: var(--chocolate-cosmos);
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+ 
